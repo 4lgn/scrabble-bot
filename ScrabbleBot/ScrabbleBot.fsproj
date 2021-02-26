@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="MultiSet.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="MaskDictionary.fs" />
+    <Compile Include="MaskGenerator.fs" />
+    <Compile Include="Backtracker.fs" />
+    <Compile Include="PointsCalculator.fs" />
+    <Compile Include="MoveFinder.fs" />
+    <Compile Include="Scrabble.fsi" />
+    <Compile Include="Scrabble.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ScrabbleUtil">
+      <HintPath>../ScrabbleUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="ScrabbleServer">
+      <HintPath>../ScrabbleServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
+    <PackageReference Include="FSharp.Quotations.Evaluator" Version="2.1.0" />
+    <PackageReference Include="FsPickler" Version="5.3.1" />
+  </ItemGroup>
+
+</Project>

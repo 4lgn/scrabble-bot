@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
+    <PackageReference Include="FSharp.Quotations.Evaluator" Version="2.1.0" />
+    <PackageReference Include="FsPickler" Version="5.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ScrabbleUtil">
+      <HintPath>./ScrabbleUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="ScrabbleServer">
+      <HintPath>./ScrabbleServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxyphenbutazone">
+      <HintPath>./Oxyphenbutazone.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ScrabbleBot/ScrabbleBot.fsproj" />
+  </ItemGroup>
+
+</Project>
